@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="600dp">
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="ifRoom"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/logOut"
+        android:icon="@drawable/ic_sign_out"
+        app:showAsAction="always"
+        android:title="Sign out" />
+
+    <item
+        android:id="@+id/action_account"
+        android:orderInCategory="10"
+        android:title="Settings"
+        app:showAsAction="never"
+        android:visible="true">
+        <menu>
+            <item
+                android:id="@+id/subPasswordChange"
+                android:title="Change password"
+                android:orderInCategory="10"
+                android:visible="true" />
+            <item
+                android:id="@+id/subUserSettings"
+                android:title="User settings"
+                android:orderInCategory="20"
+                android:visible="true" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/aboutUs"
+        android:orderInCategory="20"
+        android:title="About us"
+        app:showAsAction="never"
+        android:visible="true" />
+
+</menu>
